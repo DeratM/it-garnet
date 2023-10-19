@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>My Third HTML Document</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is the elavator pitch for your site" />
+  <meta name="author" content="Derat Miranda" />
+  <meta name="keywords" content="UALR, UA Little Rock, IT Minor" />
+</head>
+
+<body class="test">
+  <h1>HTML5 Refeerence Document </h1>
+
+  <section id="forms">
+    <h2 class="section-heading">Forms</h2>
+    <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="full-name">Full Name:</label><input type="text" name="full-name" id="full-name" placeholder="Full Name" />
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <label for="cmf">Favorite Car Manufacturer</label>
+        <select id="cmf" name="cmf">
+          <option value="null"> --- </option>
+          <option value="f">Ford</option>
+          <option value="d">Dodge</option>
+          <option value="h">Honda</option>
+          <option value="T">Toyota</option>
+          <option selected> --- </option>
+        </select>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </section>
+  <section id="headings">
+    <h2 class="section-heading"> Headings </h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </section>
+  <section id="text-based-semantics">
+    <h2 class="section-heading">Text Based Semantics</h2>
+    <p><strong>Lorem ipsum</strong><em> dolor sit amet</em> consectetur adipisicing elit. Magni <sup>iste</sup> consectetur <sub>est</sub> doloremque nobis vel <del>illum</del> autem incidunt numquam repellendus delectus quia nulla debitis, voluptatum veniam aliquam eius, quos impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus amet fugit illo quia excepturi
+      <hr /> rerum praesentium modi! Explicabo voluptatem iure impedit ea vero et aspernatur nostrum culpa blanditiis!
+    </p>
+    <address>
+      Derat Miranda<br />
+      555 Easy st.<br />
+      Little Rock, AR, 72204<br />
+    </address>
+  </section>
+  <section id="table">
+    <!-- Remove Border before publishing -->
+    <h2 class="section-heading">Table</h2>
+    <table border="1">
+      <caption>Grocery List</caption>
+      <tr>
+        <th scope="col">Item</th>
+        <th="col">Quanity</th scope>
+          <th scope="col">Cost</th>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+    </table>
+  </section>
+  <section id="list">
+    <h2 class="section-heading">Lists</h2>
+    <h3>Unordered list</h3>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+    <h3>Ordered list</h3>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+    <h3>Definiton list</h3>
+    <dl>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+    </dl>
+    <h3>Nested list</h3>
+    <ol>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <ol>
+          <li>List Item</li>
+        </ol>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <ol>
+          <li>List Item</li>
+        </ol>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <ol>
+          <li>List Item</li>
+        </ol>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <ol>
+          <li>List Item</li>
+        </ol>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <ol>
+          <li>List Item</li>
+        </ol>
+        <li>List Item</li>
+      </ul>
+    </ol>
+  </section>
+  <section id="hyperlinks">
+    <h2 class="section heading">Hyperlinks</h2>
+    <ul>
+      <li><a href="https://ualr.edu#news" target="_blank">Absloute Link</a></li>
+      <li><a href="folder/folder/file.html" title="Realative Link Example">Realative Link</a></li>
+      <li><a href="#headings">Anchor Link</a></li>
+      <li><a href="mailto:email@address.com">Email Link</a></li>
+    </ul>
+  </section>
+  <section id="quotes">
+    <h2 class="section-heading">Quotes</h2>
+    <h3>Blockquote</h3>
+    <blockquote>If you can't explain it simply, you don't understand it well enough. <cite> Albert Enstein </cite> </blockquote>
+    <h3>Inline Quote</h3>
+    <p><q> Honey taste good!</q>said Pooh.</p>
+  </section>
+  <section id="images">
+    <h2 id="images">
+      <h2 class="section-heading">Images</h2>
+      <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo" />
+  </section>
+  <section id='structual-elements'>
+    <h2 class="section-heading">Structual Elements</h2>
+    <code> &#60;div&#62; </code>
+    <code> &#60;span&#62; </code>
+    <code> &#60;main&#62; </code>
+    <code> &#60;section&#62; </code>
+    <code> &#60;nav&#62; </code>
+    <code> &#60;article&#62; </code>
+    <code> &#60;header&#62; </code>
+    <code> &#60;footer&#62; </code>
+    <code> &#60;figure&#62; </code>
+    <code> &#60;figcaption&#62; </code>
+  </section>
+
+</body>
+
+</html>
