@@ -1,0 +1,28 @@
+/*  ------ Course Homepage Stylesheet ------   */
+
+/* Type Selector */
+
+body{
+    background-color: bisque;
+}
+
+/* ID Selector */
+
+#main-heading{
+    color: olivedrab;
+    text-shadow: 1px 1px black;
+}
+
+/* Class Selector */
+
+.primary{
+    border: 2px solid olivedrab;
+    padding: 20px;
+}
+
+/* --- Psuedo --- */
+
+a:link, a:visited{
+    color:black;
+}
+
