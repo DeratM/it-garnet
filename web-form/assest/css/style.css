@@ -1,0 +1,11 @@
+html {
+    box-sizing: border-box;
+  }
+
+.formlabel {
+    display: inline-block;
+    width: 375px;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+}
