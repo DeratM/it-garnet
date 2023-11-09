@@ -19,6 +19,16 @@ html {
     box-sizing: inherit;
   }
 
+
+/* ---------------Utility Classes----------------- */
+.container{
+  margin:auto;
+  padding:40px;
+}
+
+
+
+
 /* ---------------Global Style----------------- */
   
   body{
@@ -37,3 +47,83 @@ html {
   border:2px solid #CCD5AE;
   border-radius: 4px;  
   }
+
+  header.primary {
+    background-color: #D4A373;
+    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+  /* local path - background-image: url(".../img/file") */
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 3px solid #D4A373;
+
+  }
+
+header.primary .hgroup{
+width: 70%;
+}
+
+.hgroup h1, .hgroup h2{
+  margin:0;
+}
+
+header.primary .hgroup h1 a{
+  color:white;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+  font-size: 2.5rem;
+  margin:0;
+}
+
+header.primary .hgroup h2{
+  color:white;
+  text-shadow: 1px 1px #000;
+  font-size: 1.5rem;
+
+}
+
+header.primary nav{
+  width:30%;
+  margin:0;
+
+}
+
+header.primary nav ul{
+  list-style-type: none;
+  margin:0;
+
+}
+
+header.primary nav ul li {
+  margin-bottom: 10px;
+}
+
+header.primary nav a{
+  color:white;
+  text-decoration: none ;
+  background-color: rgba(0, 0, 0, .7);
+  display:block;
+  padding:10px;
+  border-radius: 20px 0;
+  border:1px solid #D4A373;
+  border-right:5px solid #D4A373;
+  text-align: right;
+ 
+}
+
+#content h2, #content h3{
+  color: #D4A373;
+  border-left: 7.5px solid #D4A373;
+  border-radius: 15px 0;
+  padding:7.5px;
+}
+
+
+
+
+
+
+
+
