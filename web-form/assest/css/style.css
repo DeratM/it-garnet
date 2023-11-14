@@ -3,9 +3,10 @@ html {
   }
 
 .formlabel {
-    display: inline-block;
-    width: 375px;
+    display: inline-flex;
+    flex-direction: column;
     text-align: left;
     padding: 5px;
     font-weight: bold;
 }
+
