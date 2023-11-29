@@ -2,12 +2,13 @@ html {
     box-sizing: border-box;
   }
 
-.formlabel {
-    display: inline-flex;
-    flex-direction: column;
+  .formlabel {
+    display: inline-block;
+    width: 400px;
     text-align: left;
     padding: 5px;
     font-weight: bold;
+
 }
 
 .error {
