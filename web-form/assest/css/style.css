@@ -4,12 +4,32 @@ html {
 
   .formlabel {
     display: inline-block;
-    width: 100px;
-    text-align: right;
+    width: 400px;
+    text-align: left;
     padding: 5px;
     font-weight: bold;
-
+  
 }
+
+label, input{
+  float:left;
+  margin:1px;
+}
+
+label{
+  clear:both;
+  display:block 
+}
+
+select{
+  clear:both;
+  display:block;
+}
+
+textarea{
+  clear:both;
+}
+
 
 .error {
   color: red;

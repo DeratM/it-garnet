@@ -7,29 +7,12 @@
   <title>Web Form</title>
   <meta name="description" content="Web-Form-Practice">
   <meta name="author" content="Derat Miranda">
-  <!--<link href="assest/css/style.css" rel="stylesheet"/> -->
+  <link href="assest/css/style.css" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
   
-  <style>
-    html {
-    box-sizing: border-box;
-  }
-
-  .formlabel {
-    display: inline-flexbox;
-    width: 500px;
-    text-align: left;
-    padding: 5px;
-    font-weight: bold;
-  }
-
-.error {
-  color: red;
-  padding-left: 5px;
-}
-  </style>
+ 
 
 
 </head>
@@ -91,9 +74,9 @@
     <label for="weight" class="error"></label>
     <br/>
   
-    <label for="phone"> Phone Number:</label>
-    <input  type="tel" id="phone" name="phone" size="14" maxlength="14" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" data-rule-phoneUS="true" data-msg-phoneUS="Invalid Phone Number">
-    <label for="phone" class="error"></label>
+    <label> Phone Number:</label>
+    <input  type="tel" id="phonenumber" name="phonenumber" size="14" maxlength="14" data-rule-phoneUS="true" data-msg-phoneUS="Invalid Phone Number">
+    <label for="phonenumber" class="error"></label>
     <br/>
 
     <label>Marital Status: </label>
