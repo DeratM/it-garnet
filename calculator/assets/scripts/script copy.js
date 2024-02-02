@@ -13,6 +13,7 @@ function calculate() {
         
         /* figure out which operator was checked and place the value in operator */
         var operator;
+        
         if (document.getElementById("AddOperator").checked) {
             operator = document.getElementById("AddOperator").value;
         }

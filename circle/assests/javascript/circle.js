@@ -1,5 +1,4 @@
 $( "#CircleForm" ).validate({
-
 });
 
 function displayRadius () {}
@@ -9,24 +8,22 @@ function displayRadius () {}
 document.getElementById('radius').innerHTML=""
 
 // Variables
-var radius;
-var radiusfp;
-var diameter;
+var radius = parseFloat(radius); 
 var circumference;
+var diameter;
 var area;
-var result;
+
 
 // reads radius as a string
 radius = document.getElementById("radius").value;
 
-// Conver number from strings to floating point
-radius = parseFloat(radiusfp); 
-
 
 // display area, circumference, and diameter
+document.getElementById("radius").innerHTML = radius.toString();
+document.getElementById("circumference").innerHTML = circumference.toString();
 document.getElementById("diameter").innerHTML = diameter.toString();
-document.getElementById("circumference").innerHTML=circumference.toString();
-document.getElementById("area").innerHTML = area.toString()
+document.getElementById("area").innerHTML = area.toString();
+
 
 // Equations
 function calcDiameter(radius){
@@ -38,7 +35,7 @@ function calcCircumference(radius){
 }
 
 function calcArea(radius){
-  return Math.PI(radius * radius)
+  return Math.PI * Math.pow(radius, 2)
 }
 
 
