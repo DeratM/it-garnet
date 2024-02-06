@@ -8,16 +8,24 @@ function display() {
     // if the form is valid, then make the calculations
     if ($("#CircleForm").valid()) {
         
-         document.getElementById("radius").innerHTML = "";
+         document.getElementById("diameter").innerHTML = "";
+         document.getElementById("circumference").innerHTML = "";
+         document.getElementById("area").innerHTML = "";
 
-         var radius = parseFloat (document.getElementById("radius").value); 
-         var circumference = calcCircumference (radius);
-         var diameter = calcDiameter(radius);
-         var area = calcArea(radius);
+         var radius;
+         var circumference;
+         var diameter;
+         var area;
 
+        radius = document.getElementById("radius").value;
+        radius = parseFloat (radius);
+        
+        circumference = calcDiameter (radius);
+        diameter = calcCircumference(radius);
+        area = calcArea(radius);
 
          
-         // display the hypotenuse
+        
          document.getElementById("circumference").innerHTML = circumference.toString();
          document.getElementById("diameter").innerHTML = diameter.toString();
          document.getElementById("area").innerHTML = area.toString();
@@ -25,7 +33,7 @@ function display() {
 }
 
   function calcDiameter (radius){
-      return (radius * 2)
+      return radius * 2
       ;
   }
   function calcCircumference (radius){
@@ -36,6 +44,7 @@ function display() {
       return Math.PI * Math.pow(radius, 2)
       ;
   }
+  
   
   function clearForm(){
     document.getElementById("radius").value = "";
