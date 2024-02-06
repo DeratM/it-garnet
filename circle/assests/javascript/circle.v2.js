@@ -5,13 +5,9 @@ $( "#CircleForm" ).validate();
 
 
 function display() {
-    // if the form is valid, then make the calculations
     if ($("#CircleForm").valid()) {
-        
-         document.getElementById("diameter").innerHTML = "";
-         document.getElementById("circumference").innerHTML = "";
-         document.getElementById("area").innerHTML = "";
-
+         document.getElementById("radius").innerHTML = "";
+         
          var radius;
          var circumference;
          var diameter;
@@ -20,8 +16,8 @@ function display() {
         radius = document.getElementById("radius").value;
         radius = parseFloat (radius);
         
-        circumference = calcDiameter (radius);
-        diameter = calcCircumference(radius);
+        circumference = calcCircumference (radius);
+        diameter = calcDiameter (radius);
         area = calcArea(radius);
 
          
@@ -41,7 +37,7 @@ function display() {
       ;
   }
   function calcArea (radius){
-      return Math.PI * Math.pow(radius, 2)
+      return Math.PI * (radius, 2)
       ;
   }
   
