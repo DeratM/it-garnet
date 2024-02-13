@@ -12,43 +12,90 @@
 <body>
 <form id="myform">
     <div class="formcontainer">
-        <h1>Javascript Calculator (AJAX) Using Fetch</h1>
+        <h1>Unit Converter (AJAX)</h1>
         <fieldset id="detail">
             <legend>Calculator (AJAX)</legend>  
             <br>
             
-            <label class="formlabel" for="Operand1">Operand 1: </label>
+            <label class="formlabel" for="Operand1">From Value: </label>
             <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15"
                     data-rule-required="true"  data-msg-required="Operand 1 is Required" 
                     data-rule-number="true" data-msg-number="Operand 1 must be a Number">
             <label for="Operand1" class="error" id="Operand1Msg"></label>
             <br><br>
 
-            <label class="formlabel">Operator: </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="AddOperator" value = "+"
-                           data-rule-required="true" data-msg-required="Operator is Required" />+
+            <label class="formlabel">From Unit: </label>
+                
+            <!-- maybe change the "for=" -->
+                <label for="FromOperator">
+                <input type="radio" name="Operator" id="FromOperator" value = "centimenters"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimenters
                 </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="SubtractOperator" value = "-">-
+
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="mOperator" value = "meters">Meters
                 </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="MultiplyOperator" value = "*">*
+
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="kmOperator" value = "kilometers">Kilometers
                 </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="DivideOperator" value = "/">/
+
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="inOperator" value = "inches">Inches
                 </label>
-            <label for="Operator" class="error" id="OperatorMsg"></label>
-            <br><br>
-      
-            <label class="formlabel" for="Operand2">Operand 2: </label>
-            <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15"
-                    data-rule-required="true"  data-msg-required="Operand 2 is Required" 
-                    data-rule-number="true" data-msg-number="Operand 2 must be a Number">
-            <label for="Operand2" class="error" id="Operand2Msg"></label>
+
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="ftOperator" value = "feet">Feet
+                </label>
+
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="ydOperator" value = "yards">Yards
+                </label>
+                
+                <label for="FromOperator">
+                    <input type="radio" name="Operator" id="miOperator" value = "miles">Miles
+                </label>
+
+            <label for="Operator" class="error" id="FromMsg"></label>
             <br><br>
 
-            <label class="formlabel">Result: </label>
+            
+            
+            <label class="formlabel"> To Unit: </label>
+                  
+                <label for="ToOperator">
+                <input type="radio" name="Operator" id="ToOperator" value = "centimenters"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimenters
+                </label>
+
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOmOperator" value = "meters">Meters
+                </label>
+
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOkmOperator" value = "kilometers">Kilometers
+                </label>
+
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOinOperator" value = "inches">Inches
+                </label>
+
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOftOperator" value = "feet">Feet
+                </label>
+
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOydOperator" value = "yards">Yards
+                </label>
+                
+                <label for="ToOperator">
+                    <input type="radio" name="Operator" id="TOmiOperator" value = "miles">Miles
+                </label>
+            <label for="Operator" class="error" id="ToMsg"></label>
+            <br><br>
+      
+
+            <label class="formlabel">Value: </label>
             <span id="Result"></span>
             <br><br>
 
@@ -61,6 +108,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-<script src="assets/scripts/calculator.js"></script>
+<script src="assests/js/scripts.js"></script>
 </body>
 </html>
