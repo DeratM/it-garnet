@@ -1,4 +1,14 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+/*color
+
+606C38 
+283618
+FEFAE0
+DDA15E
+BC6C25
+
+*/
+
+
 html {
     box-sizing: border-box;
   } 
@@ -23,13 +33,14 @@ html {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(3, [row] auto  );  
   margin:auto;  
-  border:1px solid #000;
   padding:20px;  
   gap:20px;
+  background-color: #FEFAE0;
   }
   
   header.primary{
-    background: rgba(0, 0, 0, 0.4);
+    background-color: #606C38;
+    padding:10px;
     grid-column: 1 / 8;
     grid-row: 1 / 2; 
   }
