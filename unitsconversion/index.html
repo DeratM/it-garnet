@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,8 @@
     <meta name="keywords" content="JavaScript, HTML, CSS">
     <meta name="author" content="Bruce Bauer">
     <title>JavaScript Calculator</title>
-    <link rel="stylesheet" type="text/css" href="assests/css/stylesheet.css">
+    <link href="assets/css/stylesheet.css" rel="stylesheet"/>
+
 </head>
 <body>
 <form id="myform">
@@ -26,72 +26,72 @@
 
             <label class="formlabel">From Unit: </label>
                 
-            <!-- maybe change the "for=" -->
-                <label for="FromOperator">
-                <input type="radio" name="Operator" id="FromOperator" value = "centimenters"
-                           data-rule-required="true" data-msg-required="Operator is Required" />Centimenters
-                </label>
+            <label for="cmOperator">
+                <input type="radio" name="Operator" id="cmOperator" value="centimeters"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimeters
+            </label>
 
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="mOperator" value = "meters">Meters
-                </label>
+            <label for="mOperator">
+                <input type="radio" name="Operator" id="mOperator" value="meters">Meters
+            </label>
 
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="kmOperator" value = "kilometers">Kilometers
-                </label>
+            <label for="kmOperator">
+                <input type="radio" name="Operator" id="kmOperator" value="kilometers">Kilometers
+            </label>
 
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="inOperator" value = "inches">Inches
-                </label>
+            <label for="inOperator">
+                <input type="radio" name="Operator" id="inOperator" value="inches">Inches
+            </label>
 
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="ftOperator" value = "feet">Feet
-                </label>
+            <label for="ftOperator">
+                <input type="radio" name="Operator" id="ftOperator" value="feet">Feet
+            </label>
 
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="ydOperator" value = "yards">Yards
-                </label>
-                
-                <label for="FromOperator">
-                    <input type="radio" name="Operator" id="miOperator" value = "miles">Miles
-                </label>
+            <label for="ydOperator">
+                <input type="radio" name="Operator" id="ydOperator" value="yards">Yards
+            </label>
+            
+            <label for="miOperator">
+                <input type="radio" name="Operator" id="miOperator" value="miles">Miles
+            </label>
 
-            <label for="Operator" class="error" id="FromMsg"></label>
+            <label for="cmOperator" class="error" id="FromMsg"></label>
             <br><br>
 
             
-            
+            <!-- To -->
             <label class="formlabel"> To Unit: </label>
                   
-                <label for="ToOperator">
-                <input type="radio" name="Operator" id="ToOperator" value = "centimenters"
-                           data-rule-required="true" data-msg-required="Operator is Required" />Centimenters
-                </label>
+            <label for="To-cm-Operator">
+                <input type="radio" name="ToOperator" id="To-cm-Operator" value="centimeters"
+                           data-rule-required="true" data-msg-required="Operator is Required" />Centimeters
+            </label>
 
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOmOperator" value = "meters">Meters
-                </label>
+            <label for="To-m-Operator">
+                <input type="radio" name="ToOperator" id="To-m-Operator" value="meters">Meters
+            </label>
 
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOkmOperator" value = "kilometers">Kilometers
-                </label>
+            <label for="To-km-Operator">
+                <input type="radio" name="ToOperator" id="To-km-Operator" value="kilometers">Kilometers
+            </label>
 
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOinOperator" value = "inches">Inches
-                </label>
+            <label for="To-in-Operator">
+                <input type="radio" name="ToOperator" id="To-in-Operator" value="inches">Inches
+            </label>
 
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOftOperator" value = "feet">Feet
-                </label>
+            <label for="To-ft-Operator">
+                <input type="radio" name="ToOperator" id="To-ft-Operator" value="feet">Feet
+            </label>
 
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOydOperator" value = "yards">Yards
-                </label>
-                
-                <label for="ToOperator">
-                    <input type="radio" name="Operator" id="TOmiOperator" value = "miles">Miles
-                </label>
-            <label for="Operator" class="error" id="ToMsg"></label>
+            <label for="To-yd-Operator">
+                <input type="radio" name="ToOperator" id="To-yd-Operator" value="yards">Yards
+            </label>
+            
+            <label for="To-mi-Operator">
+                <input type="radio" name="ToOperator" id="To-mi-Operator" value="miles">Miles
+            </label>
+
+            <label for="To-cm-Operator" class="error" id="ToMsg"></label>
             <br><br>
       
 
@@ -108,6 +108,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-<script src="assests/js/scripts.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
