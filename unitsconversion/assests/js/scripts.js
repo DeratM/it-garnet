@@ -8,66 +8,67 @@ function calculate() {
     if (form.valid()) {
         
         // Operand 1
-        var operand1 = document.getElementById("Operand1").value;
+        var Operand1 = document.getElementById("Operand1").value;        
 
         // Operator
-        var from;
+    
+        var FromUnit;
         if (document.getElementById("cmOperator").checked) {
-            operator = document.getElementById("cmOperator").value;
+            FromUnit = document.getElementById("cmOperator").value;
         }
         if (document.getElementById("mOperator").checked) {
-            operator = document.getElementById("mOperator").value;
+            FromUnit = document.getElementById("mOperator").value;
         }
         if (document.getElementById("kmOperator").checked) {
-            operator = document.getElementById("kmOperator").value;
+            FromUnit = document.getElementById("kmOperator").value;
         }
         if (document.getElementById("inOperator").checked) {
-            operator = document.getElementById("inOperator").value;
+            FromUnit = document.getElementById("inOperator").value;
         }
         if (document.getElementById("ftOperator").checked) {
-            operator = document.getElementById("ftOperator").value;
+            FromUnit = document.getElementById("ftOperator").value;
         }
         if (document.getElementById("ydOperator").checked) {
-            operator = document.getElementById("ydOperator").value;
+            FromUnit = document.getElementById("ydOperator").value;
         }
         if (document.getElementById("miOperator").checked) {
-            operator = document.getElementById("miOperator").value;
+            FromUnit = document.getElementById("miOperator").value;
         }
        
-        var to;
+        var ToUnit;
         if (document.getElementById("To-cm-Operator").checked) {
-            operator = document.getElementById("cmOperator").value;
+            ToUnit = document.getElementById("To-cm-Operator").value;
         }
         if (document.getElementById("To-m-Operator").checked) {
-            operator = document.getElementById("To-m-Operator").value;
+            ToUnit = document.getElementById("To-m-Operator").value;
         }
         if (document.getElementById("To-km-Operator").checked) {
-            operator = document.getElementById("To-km-Operator").value;
+            ToUnit = document.getElementById("To-km-Operator").value;
         }
         if (document.getElementById("To-in-Operator").checked) {
-            operator = document.getElementById("To-in-Operator").value;
+            ToUnit = document.getElementById("To-in-Operator").value;
         }
         if (document.getElementById("To-ft-Operator").checked) {
-            operator = document.getElementById("To-ft-Operator").value;
+            ToUnit = document.getElementById("To-ft-Operator").value;
         }
         if (document.getElementById("To-yd-Operator").checked) {
-            operator = document.getElementById("To-yd-Operator").value;
+            ToUnit = document.getElementById("To-yd-Operator").value;
         }
         if (document.getElementById("To-mi-Operator").checked) {
-            operator = document.getElementById("To-mi-Operator").value;
+            ToUnit = document.getElementById("To-mi-Operator").value;
         }
 
-        CalculateResult(operand1, from, to);
+        CalculateResult(Operand1, FromUnit, ToUnit);
     }
 }
 
-async function CalculateResult(operand1, from, to) {
+async function CalculateResult(Operand1, FromUnit, ToUnit) {
         
         // URL and method used with AJAX Call
         var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
 
         /* AJAX calculator requires Operand1, Operator, and Operand2 */
-        myURL = myURL + "?Operand1=" + encodeURIComponent(operand1) + "&from=" + encodeURIComponent(from) + "&to=" + encodeURIComponent(to);
+        myURL = myURL + "?FromValue=" + encodeURIComponent(Operand1) + "&FromUnit=" + encodeURIComponent(FromUnit) + "&ToUnit=" + encodeURIComponent(ToUnit);
 
         /* fetch the results */
         let myCalcObject = await fetch(myURL);
@@ -99,9 +100,8 @@ function clearform() {
     document.getElementById("To-yd-Operator").checked = false;
     document.getElementById("To-mi-Operator").checked = false;
 
-    document.getElementById("FromMsg").innerHTML = "";
-    document.getElementById("ToMsg").innerHTML = "";
-
+    document.getElementById("fromMsg").innerHTML = "";
+    document.getElementById("toMsg").innerHTML = "";
     
     document.getElementById("Result").innerHTML = "";
 }
