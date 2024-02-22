@@ -113,7 +113,7 @@ li a:hover {
   #articles{
     grid-column: 7/8;
     grid-row: 1/3 ;
-    color:blue;
+    
   }
   
 /* Secondary Conent */
