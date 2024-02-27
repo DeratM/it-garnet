@@ -11,7 +11,7 @@ async function GetStock() {
     if (form.valid()) {
         
         var StockSymbol = document.getElementById("StockSymbol").value;
-        var apiKey = "35eaVfKsObXpSg2O4kMLj9udr2DgVW1f"
+        var apiKey = "vg549lERDp02oT9VnUccCrdHHgjarFmu"
         var FromDate = document.getElementById("FromDate").value;
         var ToDate = document.getElementById("ToDate").value;
 
