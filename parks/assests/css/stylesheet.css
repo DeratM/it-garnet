@@ -33,7 +33,7 @@ html {
   
   main{
   display:grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, [row] auto  );  
   margin:auto;  
   padding:20px;  
@@ -68,13 +68,34 @@ html {
   header.primary{
     background-color: #4e615b;
     padding:10px;
-    grid-column: 1 / 8;
+    grid-column: 1 / 11;
     grid-row: 1 / 2; 
 
     /* https://zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+
+    background-repeat: no-repeat ;
+    background-size: 8%;
+  }
+
+  header.primary h1 a{
     background-image: url("../img/logo.png");
     background-repeat: no-repeat ;
     background-size: 8%;
+    display:block;
+    height: 140px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+     
+  }
+
+  header.primary h2{
+    text-align: center;
+    padding-bottom:75px;
+    display: block;
+    font-size: 50px;
+    color:#ece6da ;
+
   }
 
   /* Nav */
@@ -116,7 +137,7 @@ html {
 /* Images */
 
 .container{
-  grid-column: 1 / 8;
+  grid-column: 1 / 11;
   grid-row: 2 / 3;
   margin:40px auto;
   width:70vw;
@@ -160,7 +181,7 @@ ck-autoplay-toggle-button,
 /* Conent Wrapper*/
 
   #content{
-    grid-column: 1 / 8;
+    grid-column: 1 / 11;
     grid-row: 3/ 4;
     display:grid;
     grid-template-columns: subgrid;
@@ -172,11 +193,16 @@ ck-autoplay-toggle-button,
 
   #blog{
     background: rgba(0, 0, 0, 0.3);
-    grid-column: 1/7;
+    grid-column: 1/8;
     grid-row: 1;
     font-size: 20px;
     display: flex;
     
+  }
+
+  #blog h2{
+    text-align: center;
+    font-size: 40px;
   }
 
   #blog div{
@@ -184,41 +210,88 @@ ck-autoplay-toggle-button,
 
   }
 
+  #blog details{
+    background-color: #4e615b;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-style:outset;
+    border-color: #ece6da;
+    border-width: 3px;
+  }
+
+  #blog summary{
+    padding:5px;
+    border-bottom-style: solid;
+  }
+
+
 /* Aside */
   #articles{
-    grid-column: 7/8;
+    grid-column: 8/11;
     grid-row: 1/3 ;
     background-color: #4e615b;
-    padding:20px;
-    margin-top:30px;
-    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+
+    /* color:#ece6da; */
     
   }
+
+  #articles p{
+    font-size: 20px;
+  }
   
+  #articles h3{
+    font-size: 25px;
+  }
+
+  #articles h2{
+    font-size: 30px;
+    text-align: center;
+  }
   
 #articles img{
-  width: 50%
+width: 200%;
 }
 
 /* Secondary Conent */
   #complementary{
     background: rgba(0, 0, 0, 0.3);
-    grid-column: 1/7;
+    grid-column: 1/8;
     grid-row: 2/3;
-    padding:50px;
-    position:relative;
-
+    
   }
+
+  #complementary h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  #complementary ul:nth-child(-n + 3) {
+    margin-bottom: 10px;
+  }
+
+  #hours ul{
+    list-style-type: none; 
+  }
+
 
   #hours{
-    
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 10px;
   }
 
-  #trials{
-    
+  #trails{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 10px;
   }
 
   #events{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
     
   }
 
@@ -228,7 +301,7 @@ ck-autoplay-toggle-button,
   
   footer.primary{
   background: #4e615b;
-  grid-column: 1 / 8;
+  grid-column: 1 / 11;
   grid-row: 4/5;
   text-align: center;
   }
