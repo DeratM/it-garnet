@@ -308,7 +308,5 @@ width: 200%;
 
 /* Media Queria */
 @media screen and (max-width: 420px){ 
-  main{
-   grid-template-columns: 1fr;
-  }
+  
 }
