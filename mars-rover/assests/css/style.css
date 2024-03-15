@@ -1,4 +1,4 @@
-table{
-    border-style: double;
-    border-width: 10px;
+.error{
+  color: red;
+  padding-left:5px;
 }
