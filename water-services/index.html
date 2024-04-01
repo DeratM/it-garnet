@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Water level of the Buffalo River">
+  <meta name="author" content="Derat Miranda">
+  <title>Water Servies</title>
+  <link href="assests/css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body class="container">
+  <form id="waterLevelForm">
+
+  <header>
+    <h1>Water Levels</h1>
+  </header>
+
+  <table id="table">
+    <tr>
+      <th>River</th>
+      <th>Date Start</th>
+      <th>Data End</th>
+    </tr>
+
+
+    <td>Boxley</td>
+      <td>04/17/1993</td>
+      <td>Current</td>
+    </tr>
+
+    <tr>
+      <td>Carver</td>
+      <td>09/20/2012</td>
+      <td>Current</td>
+    </tr>
+
+    <tr>
+      <td>Ponca</td>
+      <td>05/03/2008</td>
+      <td>Current</td>
+    </tr>
+
+    <tr>
+      <td>Pruitt</td>
+      <td>06/14/2008</td>
+      <td>Current</td>
+    </tr>
+
+  </table>
+
+
+<h2>Select the River and Dates:</h2>
+
+  <label class="formlabel">Rivers: </label>
+    <label for="boxley">
+        <input type="radio" name="river" id="boxley" value="boxley" data-rule-required="true" data-msg-required="A River is Required" onchange="myFunction()"/>Boxley </label>
+
+    <label for="carver">
+      <input type="radio" name="river" id="carver" value="carver" data-rule-required="true" data-msg-required="A River is Required"onchange="myFunction()"/>Carver</label>
+
+    <label for="ponca">
+      <input type="radio" name="river" id="ponca" value="ponca" data-rule-required="true" data-msg-required="A River is Required" onchange="myFunction()"/>Ponca </label>
+
+  <label for="pruitt">
+    <input type="radio" name="river" id="pruitt" value="pruitt" data-rule-required="true" data-msg-required="A River is Required" onchange="myFunction()"/>Pruitt </label>
+<label for="river" class="error" id="riverError"></label>
+
+  <br>
+
+  <div id="fromMonth">
+    <label class="formlabel">From Date:</label>
+    <input type="date" name="FromDate" id="FromDate" data-rule-required="true"
+        data-msg-required="From Date is Required">
+    <label id="FromDateError" class="error"></label>
+     
+    <label class="formlabel">To Date:</label>
+    <input type="date" name="ToDate" id="ToDate" data-rule-required="true"
+        data-msg-required="To Date is Required">
+    <label id="ToDateError" class="error"></label>
+  </div>
+  
+  <br>
+
+<div id="buttons">
+    <input type="button" value="Search" id="search" name="Search" onclick="GetPhotos();">
+    <input type="button" value="Clear" id="clear" onclick="clearform();" formnovalidate>
+</div>
+
+  <hr>
+                
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+  <script src="assests/javascript/scripts.js"></script>
+</body>
+</html>
