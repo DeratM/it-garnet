@@ -22,13 +22,17 @@ async function GetData() {
         type: "line",
         data: {
             labels: dates,
-            datasets: [{"dates":"values",
+            datasets: [{"date":"City",
                 label: "values", 
                 data: values,
                 fill: false,
-                borderColor: "rgb(75, 192, 192)",
+                borderColor: "#D99441",
                 lineTension: 0.1
+                
             }]
         }
     });
+
 }
+
+
