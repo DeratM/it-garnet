@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="description" content="Water level of the Buffalo River">
   <meta name="author" content="Derat Miranda">
-  <title>Water Servies</title>
-  <link href="assests/css/stylesheet.css" rel="stylesheet">
+  <title>Water Services</title>
+  <link href="assets/css/stylesheet.css" rel="stylesheet">
 </head>
 
-<body class="container">
+<body onload="GetData()">
   
-    <input type="button" value="Search" id="search" name="Search" onclick="getData();">
-    <input type="button" value="Clear" id="clear" onclick="clearForm();" formnovalidate>
-
-    <p id="results"></p>
+  
+  <section><canvas id="chartjs-0" width="400" height="400"></canvas></section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
-  <script src="assests/javascript/scripts.js"></script>
+  <script src="assets/javascript/scripts.js"></script>
 </body>
 </html>
