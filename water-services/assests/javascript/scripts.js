@@ -19,19 +19,44 @@ async function GetData() {
 
     let ctx0 = document.getElementById("chartjs-0");
     var myChart = new Chart(ctx0, {
-        type: "line",
-        data: {
-            labels: dates,
-            datasets: [{"date":"City",
-                label: "values", 
-                data: values,
-                fill: false,
-                borderColor: "#D99441",
-                lineTension: 0.1
-                
-            }]
+        "type":"line",
+        "data": {
+            "labels": dates,
+            "datasets":[{"label":"Gauge Height",
+            "data": values,
+            "fill":false,
+            "borderColor":"rgb(75, 192, 192)",
+            "lineTension":0.1}]},
+            "options":{
+                responsive: false,
+                maintainAspectRatio: true,
+                title: {
+                    display: true,
+                    text: sitename + ' - PID: ' + sitecode,
+                    fontSize : 18
+                },
+                scales: {
+                    xAxes: [{
+                        type: 'time',
+                        time: {
+                             displayFormats: {
+                                day: 'MMM D'
+                            }
+                        }
+                    }],
+    
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: siteDescription
+                        }
+                    }]
+    
+                }
+            }
         }
-    });
+    );
+
 
 
     // Graph 2
